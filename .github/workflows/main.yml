@@ -22,7 +22,7 @@ jobs:
           aws-region: ap-south-1 # change to your AWS region
 
       - name: Deploy express dummy server
-        run: aws s3 sync . s3://express-server --delete
+        run: aws s3 sync . s3://dummy-dev-server --delete
 
       # Optional: Add deployment step if you're copying to S3, SSH into EC2, or triggering CodeDeploy, etc.
       # - name: Deploy to EC2 via SSH
